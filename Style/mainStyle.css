@@ -1,3 +1,4 @@
-* {
-  background-color: aliceblue;
+@import url(var.css);
+body {
+  background-color: var(--corFundoprincipal);
 }/*# sourceMappingURL=mainStyle.css.map */
