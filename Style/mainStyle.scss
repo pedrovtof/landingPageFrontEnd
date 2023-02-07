@@ -1,5 +1,410 @@
 @import url(var.css);
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    background-color: var(--corFundoprincipal);
+    display: flexbox;
+
+    header{
+
+        margin: 0px auto;
+
+
+            .skwed{
+                width: 100%;
+                height: 30vh;
+                transform: skew(0deg, 4deg);
+                background-color: var(--collorMain);
+                margin-bottom: 2%;
+                margin-top: -4%;
+            }
+        
+
+        .container-intro-site{
+            background-color: var(--collorMain);
+            border: 1px solid var(--collorMain);
+            opacity: 1;
+            border-radius: 0px 0px 0px 0px;
+            position: relative;
+            text-align: center;
+            margin-bottom: 0%;
+            height: min-content;
+
+            .intro-site-title-level-3{
+                margin-top: 5%;
+                font-size: 1.2em;
+                color: var(--collorHeadMain);
+            }
+
+            .intro-site-title-level-1{
+                margin-top: 1%;
+                font-size: 2.5em;
+                color: var(--collorHeadMain);
+            }
+
+            .info-under-intro-title-level-1{
+                display: block;
+                margin-top: 2%;
+                color: var(--collorHeadMain);
+            }
+
+            .nav-intro-site{
+                margin-top: 4%;
+                margin-bottom: 0%;
+                color: var(--collorHeadMain);
+            }
+
+            .intro-site-options{
+                margin-top: 4%;
+                margin-left: 13%;
+                margin-right: 13%;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+
+                li{
+                    z-index: 1;
+                    position: relative;
+                    display: block;
+                    color: var(--collorMain);
+                    padding: 12px;
+                    box-sizing: border-box;
+                    border: 1px 1px 1px var(--collorMain);
+                    background: var(--collorHeadMain);
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    main{
+
+        margin: 5% 10%;
+
+        .container-subscribe{
+            
+            display: flex;
+            justify-content: space-between;
+
+            .subscribe-fist-section{
+                text-align: left;
+                margin-right: 2%;
+                width: 50%;
+                height: 35%;
+                display: block;
+                margin-bottom: 5%;
+                color: var(--collorMain);
+
+                h3{
+                    margin-bottom: 2%;
+                    font-size: 1.5em;
+                    margin-bottom: 5%;
+                    display: block;
+                    font-style: none;
+                }
+
+                p{
+                    font-size: 1.1em;
+                }
+
+            }
+
+            .subscribe-second-section{
+                text-align: left;
+                margin-left: 1%;
+                width: 45%;
+                height: 35%;
+                display: block;
+                margin-bottom: 5%;
+
+                form{
+                    color: var(--collorMain);
+                                        
+                        .subscribe-form{
+                            list-style: none;
+
+                            li{
+
+                                margin-bottom: 4%;
+                                
+                                label{
+                                    display: block;
+                                    margin-bottom: -2%;
+                                }
+
+                                .label-checkbox{
+                                    display: inline-flex;
+                                    margin-right: 5%;
+                                    font-size: 17px;
+                                }
+
+                                .subscribe-form-input{
+                                    width: 90%;
+                                    padding: 2%;
+                                    margin-bottom: 1.3%;
+                                    border-radius: 5px;
+                                    border: 1.3px solid var(--collorMain);
+                                }
+    
+                                .subscribe-form-checkbox{
+                                    width: 3%;
+                                    padding: 1.5%;
+                                    border-radius: 100%;
+                                    border: 0.1px solid var(--collorMain);
+                                    height: 8px;
+                                }
+
+                                .subscribe-form-button{
+                                    width: 95%;
+                                    border: 1.3px solid var(--collorMain);
+                                    padding: 3%;
+                                    border-radius: 15px;
+                                }
+
+                            }
+
+                        }
+                }
+
+            }
+        }
+
+        .container-product{
+
+            .container-product-introduction{
+                display: inline-flex;
+                justify-content: space-around;
+                width: 100%;
+
+            .container-product-introduction-line-1{
+                box-sizing: border-box;
+                content: "";
+                border: 0.2px solid var(--collorMain);
+                width: 30vw;
+                height: 1px;
+            }
+
+            .container-product-introduction-text{
+                text-align: center;
+                position: relative;
+                color: var(--collorMain);;
+                bottom: 12px;
+                margin: 0% 0.1% 1% 0.1%;
+            }
+
+
+            .container-product-introduction-line-2{
+                box-sizing: border-box;
+                content: "";
+                border: 0.2px solid var(--collorMain);
+                width: 30vw;
+                height: 1px;
+            }
+
+        }
+
+        .products-list{
+            display: inline-flex;
+            flex-direction: row;
+            margin: 3% 0.5%;
+
+            .product-item{
+                width: 25%;
+
+                .name-product{
+                    margin: var(--productSize);
+                    color: var(--collorMain);
+                }
+
+                .description-product{
+                    margin: var(--productSize);
+                    color: var(--collorMain);
+                }
+
+                .value-product{
+                    margin: var(--productSize);
+                    color: var(--collorMain);
+                }
+
+                .Value-descont{
+                    margin: var(--productSize);
+                    color: var(--collorMain);
+                    font-weight: bold;
+                }
+
+                .value-product-part{
+                    margin: var(--productSize);
+                    color: var(--collorMain);
+                }
+
+                .buy-product{
+                    margin: var(--productSize);
+                    color: var(--collorMain);
+                }
+
+                .buy-product{
+                    margin: var(--productSize);
+                    width: 80%;
+                    border: 1px solid var(--collorMain);
+                    padding: 2.5%;
+                    border-radius: 5px;
+                    font-size: 0.9em;
+                }
+
+            }
+        }
+
+        .more-product{
+            text-align: center;
+            align-content: center;
+            margin: 6% 40% 10% 27%;
+            border-radius: 5px;
+            color: var(--collorMain);
+            border:  1px solid var(--collorMain);
+            padding: 1%;
+            width: 40%;
+        }
+
+        }
+
+        .container-news-share{
+            .container-news-intro{
+                display: inline-flex;
+                justify-content: space-around;
+                width: 100%;
+
+                .container-news-intro-1{
+                    box-sizing: border-box;
+                    content: "";
+                    border: 0.2px solid var(--collorMain);
+                    width: 27vw;
+                    height: 1px;
+                }
+
+                h2{
+                    text-align: center;
+                    position: relative;
+                    color: var(--collorMain);;
+                    bottom: 12px;
+                    margin: 0% 0.1% 1% 0.1%;
+                }
+
+                .container-news-intro-2{
+                    box-sizing: border-box;
+                    content: "";
+                    border: 0.2px solid var(--collorMain);
+                    width: 28vw;
+                    height: 1px;
+                }
+
+            }
+
+            p{
+                text-align: center;
+                display: block;
+                margin: 2% auto;
+                color: var(--collorMain);
+            }
+
+            form{
+                display: flex;
+                justify-content: left;
+                padding: 0px;
+                border: 0px solid black;
+                margin: 0px;
+
+                .news-form-share-first{
+                    color: var(--collorMain);
+                    position: relative;
+                    margin-left: 15%;
+                    label{
+                        display: block;
+                        margin: 0% 0% -2% 0%;
+                    }
+
+                    input{
+                        margin-top: -2%;
+                        width: 170%;
+                        padding: 3%;
+                        margin-bottom: 1.3%;
+                        border-radius: 2px;
+                        border: 1.3px solid var(--collorMain);
+                    }
+                }
+
+                .news-form-share-second{
+                    color: var(--collorMain);
+                    position: relative;
+                    margin-left: 22%;
+                    label{
+                        margin: 0% 0% -2% 0%;
+                        display: block;
+                    }
+                    
+                    input{
+                        margin-top: -2%;
+                        width: 170%;
+                        padding: 3%;
+                        margin-bottom: 1.3%;
+                        border-radius: 2px;
+                        border: 1.3px solid var(--collorMain);
+                    }
+
+                }
+
+            }
+
+            .news-form-button{
+                position: relative;
+                left: 28%;
+                margin: 6% 0% 2% 0%;
+                text-align: center;
+                align-content: center;
+                border-radius: 5px;
+                color: var(--collorMain);
+                border:  1px solid var(--collorMain);
+                padding: 1%;
+                width: 40%;
+            }
+
+        }
+
+
+    }
+
+
+
+    .skwed-footer{
+        width: 107%;
+        height: 29vh;
+        transform: skew(0, 176deg);
+        background-color: var(--collorMain);
+        margin-bottom: -9%;
+        margin-top: 0%;
+        position: relative;
+        left: -7%;
+        top: 11px;
+    }
+
+    footer{
+
+      
+
+        margin-top: 6%;
+        padding: 0% 6% 3% 6%;
+        text-align: center;
+        background-color: var(--collorMain);
+
+        .container-footer-end-page{
+            color: var(--collorHeadMain);
+            margin-bottom: 3%;
+            position: relative;
+            z-index: 1;
+        }
+    }
 }
