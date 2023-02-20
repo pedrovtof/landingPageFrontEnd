@@ -1,46 +1,26 @@
 
 //conexão
 let pageAPI = 1
-let page = document.body
+let url = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
 
-page.onload = () =>
-    begin() //inicia a procura
-        .then(connected) //se conectado
-        .catch(errorConnection) // se nao conectado
-
-function begin(){
-    return new Promise((resolve, reject) => { // protocolo padrao para conexão
-        
-        const xhttp = new XMLHttpRequest() // protocolo padrao para conexão
-
-        xhttp.onreadystatechange = function(){ // protocolo padrao para conexão
-            if (this.readyState == 4 && this.status == 200){  // protocolo padrao para conexão (valida)
-                const response = JSON.parse(this.responseText) // protocolo padrao para JSON
-
-                resolve(response) // protocolo padrao para resultado conexão
-
-            }
-
-            if(this.status === 404){ // protocolo padrao para conexão (invalida)
-                reject() // protocolo padrao para conexão
-            }
-        }
-
-        xhttp.open('GET',`https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${pageAPI}`) // Link e metodo
-
-        xhttp.send() // protocolo padrao para conexão
-
-    })
+function conectProduct() {
+    fetch(url)
+        .then(response => {
+            response.json().then(data => {
+                addProduct(data)
+                console.log(data);
+                url = `https://${data.nextPage}`; //a url irá redirecionar para a próxima pagina| estava faltando o http no link da api
+            })
+        })
+        .catch(error => console.error(error));
 }
+conectProduct()
 
-function errorConnection(){ //caso conexao falhe
-    return console.log('error') 
-}
 
 const htmlInsert = document.querySelector('.products-list') //cria lista para inserir produto
 
-function connected(response){ // se conexao der certo
-    const APIResponse = response.products // retira valores
+function addProduct(data){ // se conexao der certo
+    const APIResponse = data.products // retira valores
 
     for(let i = 0 ;i < APIResponse.length; i ++){ // insere texto baseado no tanto de produtos
         htmlInsert.innerHTML = htmlInsert.innerHTML + `<div class="product-item">
@@ -59,14 +39,11 @@ function connected(response){ // se conexao der certo
 }
 
 
-const btnNextPage = document.querySelector('.more-product')
-btnNextPage.addEventListener("click", (e) => {
+const loadProduct = document.querySelector('.more-product')
+loadProduct.addEventListener("click", (e) => {
     e.preventDefault();
    pageAPI += 1
-   begin()
-   console.log(pageAPI)
-   console.log(e)
-
+   conectProduct()
 })
 
 
