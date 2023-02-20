@@ -37,21 +37,21 @@
                     <ul class="subscribe-form">
                         <li>
                             <label>Seu nome:</label><br>
-                            <input id="nome" class="subscribe-form-input" type="text">
+                            <input required pattern="[a-zA-Z\s]{4,50}" id="nome" class="subscribe-form-input" type="text">
                             <span id="span-add-form"></span>
                         </li>
                         <li>
                             <label>E-mail:</label><br>
-                            <input id="email" class="subscribe-form-input" type="email">
+                            <input required  id="email" class="subscribe-form-input" type="email">
                             <span id="span-add-form"></span>
                         </li>
                         <li>
                             <label>CPF:</label><br>
-                            <input id="cpf" class="subscribe-form-input" type="text">
+                            <input maxlength="14" pattern="[0-9\s]{11,12}" title="Gentileza não usar pontos" id="cpf" class="subscribe-form-input" required  type="text">
                             <span id="span-add-form"></span>
                         </li>
                         <li>
-                            <input class="subscribe-form-checkbox" type="button" name="sex" id="sex">
+                            <input  class="subscribe-form-checkbox" type="button" name="sex" id="sex">
                              <label class="label-checkbox" for="sex">Masculino</label>
 
                             <input class="subscribe-form-checkbox" type="button" name="sex" id="sex">
@@ -76,9 +76,9 @@
             </div>
  
             <div class="products-list">
-
+<!--
                 <div class="product-item">
-                    <img src="#" alt="item from supplier">
+                    <img id="image" src="#" alt="item from supplier">
                     <h4 class="name-product">Nome do produto</h4>
                     <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
                     <p class="value-product">De: XXX</p>
@@ -86,84 +86,10 @@
                     <p class="value-product-part">ou 2xde XXX</p>
                     <button class="buy-product">Comprar</button>
                 </div>
-
-                <div class="product-item">
-                    <img src="#" alt="item from supplier">
-                    <h4 class="name-product">Nome do produto</h4>
-                    <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                    <p class="value-product">De: XXX</p>
-                    <p class="Value-descont">Por: XXX</p>
-                    <p class="value-product-part">ou 2xde XXX</p>
-                    <button class="buy-product">Comprar</button>
-                </div>
-
-                <div class="product-item">
-                    <img src="#" alt="item from supplier">
-                    <h4 class="name-product">Nome do produto</h4>
-                    <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                    <p class="value-product">De: XXX</p>
-                    <p class="Value-descont">Por: XXX</p>
-                    <p class="value-product-part">ou 2xde XXX</p>
-                    <button class="buy-product">Comprar</button>
-                </div>
-
-                <div class="product-item">
-                    <img src="#" alt="item from supplier">
-                    <h4 class="name-product">Nome do produto</h4>
-                    <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                    <p class="value-product">De: XXX</p>
-                    <p class="Value-descont">Por: XXX</p>
-                    <p class="value-product-part">ou 2xde XXX</p>
-                    <button class="buy-product">Comprar</button>
-                </div>
-
+-->
             </div>
 
-            <div class="products-list">
-
-                <div class="product-item">
-                    <img src="#" alt="item from supplier">
-                    <h4 class="name-product">Nome do produto</h4>
-                    <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                    <p class="value-product">De: XXX</p>
-                    <p class="Value-descont">Por: XXX</p>
-                    <p class="value-product-part">ou 2x de XXX</p>
-                    <button class="buy-product">Comprar</button>
-                </div>
-
-                <div class="product-item">
-                    <img src="#" alt="item from supplier">
-                    <h4 class="name-product">Nome do produto</h4>
-                    <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                    <p class="value-product">De: XXX</p>
-                    <p class="Value-descont">Por: XXX</p>
-                    <p class="value-product-part">ou 2xde XXX</p>
-                    <button class="buy-product">Comprar</button>
-                </div>
-
-                <div class="product-item">
-                    <img src="#" alt="item from supplier">
-                    <h4 class="name-product">Nome do produto</h4>
-                    <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                    <p class="value-product">De: XXX</p>
-                    <p class="Value-descont">Por: XXX</p>
-                    <p class="value-product-part">ou 2xde XXX</p>
-                    <button class="buy-product">Comprar</button>
-                </div>
-
-                <div class="product-item">
-                    <img src="#" alt="item from supplier">
-                    <h4 class="name-product">Nome do produto</h4>
-                    <p class="description-product">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                    <p class="value-product">De: XXX</p>
-                    <p class="Value-descont">Por: XXX</p>
-                    <p class="value-product-part">ou 2xde XXX</p>
-                    <button class="buy-product">Comprar</button>
-                </div>
-
-            </div>
-
-            <button class="more-product">Ainda mais produtos aqui!</button>
+            <button type="button"  id="chanceApiPage" class="more-product">Ainda mais produtos aqui!</button>
         </section>
 
         <section class="container-news-share">
@@ -178,13 +104,13 @@
                 <form action="#" id="news-subscribe" method="get">
                     <div class="news-form-share-first">
                         <label for="">Nome do seu amigo:</label><br>
-                        <input id="name-friend" class="name-friend" type="text"><br>
+                        <input required pattern="[a-zA-Z\s]{4,50}"  id="name-friend" class="name-friend" type="text"><br>
                         <span></span>
                     </div>
 
                     <div class="news-form-share-second">
                         <label for="">E-mail:</label><br>
-                        <input type="email" class="email-share" id="email-share">
+                        <input required type="email" class="email-share" id="email-share">
                         <span></span>
                     </div>
                     <button type="submit" class="news-form-button">Enviar agora</button>
