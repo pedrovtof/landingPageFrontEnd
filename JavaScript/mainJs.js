@@ -1,6 +1,5 @@
 
 //conexão
-let pageAPI = 1
 let url = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
 
 function conectProduct() {
@@ -8,8 +7,7 @@ function conectProduct() {
         .then(response => {
             response.json().then(data => {
                 addProduct(data)
-                console.log(data);
-                url = `https://${data.nextPage}`; //a url irá redirecionar para a próxima pagina| estava faltando o http no link da api
+                url = `https://${data.nextPage}`; // 
             })
         })
         .catch(error => console.error(error));
@@ -42,7 +40,6 @@ function addProduct(data){ // se conexao der certo
 const loadProduct = document.querySelector('.more-product')
 loadProduct.addEventListener("click", (e) => {
     e.preventDefault();
-   pageAPI += 1
    conectProduct()
 })
 
