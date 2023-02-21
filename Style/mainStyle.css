@@ -134,7 +134,7 @@ body main .container-subscribe .subscribe-second-section form .subscribe-form li
   padding: 1.5%;
   border-radius: 100%;
   border: 0.1px solid var(--collorMain);
-  height: 8px;
+  height: 12px;
 }
 body main .container-subscribe .subscribe-second-section form .subscribe-form li .subscribe-form-button {
   width: 95%;
@@ -217,6 +217,7 @@ body main .container-product .products-list .product-item .Value-descont {
   margin: var(--productSize);
   color: var(--collorMain);
   font-weight: bold;
+  font-size: 1.2em;
 }
 body main .container-product .products-list .product-item .value-product-part {
   margin: var(--productSize);
@@ -248,12 +249,13 @@ body main .container-news-share .container-news-intro {
   display: inline-flex;
   justify-content: space-around;
   width: 100%;
+  margin-bottom: 5%;
 }
 body main .container-news-share .container-news-intro .container-news-intro-1 {
   box-sizing: border-box;
   content: "";
   border: 0.2px solid var(--collorMain);
-  width: 27vw;
+  width: 28vw;
   height: 1px;
 }
 body main .container-news-share .container-news-intro h2 {
@@ -267,85 +269,44 @@ body main .container-news-share .container-news-intro .container-news-intro-2 {
   box-sizing: border-box;
   content: "";
   border: 0.2px solid var(--collorMain);
-  width: 28vw;
+  width: 30vw;
   height: 1px;
 }
 body main .container-news-share p {
   text-align: center;
-  display: block;
-  margin: 2% auto;
   color: var(--collorMain);
-}
-body main .container-news-share form {
-  display: flex;
-  justify-content: left;
-  padding: 0px;
-  border: 0px solid black;
-  margin: 0px;
-}
-body main .container-news-share form .news-form-share-first {
-  color: var(--collorMain);
-  position: relative;
-  margin-left: 15%;
-}
-body main .container-news-share form .news-form-share-first label {
   display: block;
-  margin: 0% 0% -2% 0%;
+  margin-bottom: 2%;
+  font-size: 1.2em;
 }
-body main .container-news-share form .news-form-share-first .inputError2 {
-  margin-top: -2%;
-  width: 170%;
-  padding: 3%;
-  margin-bottom: 1.3%;
-  border-radius: 2px;
-  border: 1.3px solid red;
+body main .container-news-share .news-form-share #news-subscribe .news-form-share-list {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 3vw 6vw;
+  width: -webkit-fill-available;
 }
-body main .container-news-share form .news-form-share-first .name-friend {
-  margin-top: -2%;
-  width: 170%;
-  padding: 3%;
-  margin-bottom: 1.3%;
-  border-radius: 2px;
-  border: 1.3px solid var(--collorMain);
-}
-body main .container-news-share form .news-form-share-second {
+body main .container-news-share .news-form-share #news-subscribe .news-form-share-list li label {
   color: var(--collorMain);
-  position: relative;
-  margin-left: 22%;
+  margin-bottom: 1%;
 }
-body main .container-news-share form .news-form-share-second label {
-  margin: 0% 0% -2% 0%;
+body main .container-news-share .news-form-share #news-subscribe .news-form-share-list li input {
+  margin: 3% 0%;
   display: block;
-}
-body main .container-news-share form .news-form-share-second .inputError2 {
-  margin-top: -2%;
-  width: 170%;
-  padding: 3%;
-  margin-bottom: 1.3%;
-  border-radius: 2px;
-  border: 1.3px solid red;
-}
-body main .container-news-share form .news-form-share-second .email-share {
-  margin-top: -2%;
-  width: 170%;
-  padding: 3%;
-  margin-bottom: 1.3%;
-  border-radius: 2px;
-  border: 1.3px solid var(--collorMain);
-}
-body main .container-news-share .news-form-button {
-  flex-wrap: wrap;
-  display: block;
-  position: absolute;
-  left: 28%;
-  margin: 8% 0% 2% 0%;
-  text-align: center;
-  align-content: center;
-  border-radius: 5px;
-  color: var(--collorMain);
   border: 1px solid var(--collorMain);
-  padding: 1%;
-  width: 40%;
+  width: 29vw;
+  padding: 2%;
+  border-radius: 5px;
+}
+body main .container-news-share .news-form-share #news-subscribe .news-form-button {
+  text-align: center;
+  margin: 0% 30%;
+  padding: 1vw 11vw;
+  background-color: white;
+  border: 1px solid var(--collorMain);
+  font-size: 1em;
+  border-radius: 4px;
+  color: var(--collorMain);
 }
 body .skwed-footer {
   width: 107%;

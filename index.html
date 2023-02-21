@@ -51,10 +51,10 @@
                             <span id="span-add-form"></span>
                         </li>
                         <li>
-                            <input  class="subscribe-form-checkbox" type="button" name="sex" id="sex">
+                            <input  class="subscribe-form-checkbox" type="radio" name="sex" id="sex">
                              <label class="label-checkbox" for="sex">Masculino</label>
 
-                            <input class="subscribe-form-checkbox" type="button" name="sex" id="sex">
+                            <input class="subscribe-form-checkbox" type="radio" name="sex" id="sex">
                              <label class="label-checkbox" for="sex">Feminino</label>
 
                              <span id="span-add-form"></span>
@@ -100,19 +100,22 @@
             </div>
             
             <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+
             <div class="news-form-share">
                 <form action="#" id="news-subscribe" method="get">
-                    <div class="news-form-share-first">
-                        <label for="">Nome do seu amigo:</label><br>
-                        <input required pattern="[a-zA-Z\s]{4,50}"  id="name-friend" class="name-friend" type="text"><br>
-                        <span></span>
-                    </div>
-
-                    <div class="news-form-share-second">
-                        <label for="">E-mail:</label><br>
-                        <input required type="email" class="email-share" id="email-share">
-                        <span></span>
-                    </div>
+                    <ul class="news-form-share-list">
+                        <li class="first-share-form">
+                                <label for="">Nome do seu amigo:</label><br>
+                                <input required pattern="[a-zA-Z\s]{4,50}"  id="name-friend" class="name-friend" type="text"><br>
+                                <span></span>
+                        </li>
+                        <li class="second-share-form">
+                                <label for="">E-mail:</label><br>
+                                <input required type="email" class="email-share" id="email-share"><br>
+                                <span></span>
+                        </li>
+                    </ul>
+                    <br>
                     <button type="submit" class="news-form-button">Enviar agora</button>
                 </form>
                 

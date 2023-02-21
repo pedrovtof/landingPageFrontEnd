@@ -14,7 +14,6 @@ function conectProduct() {
 }
 conectProduct()
 
-
 const htmlInsert = document.querySelector('.products-list') //cria lista para inserir produto
 
 function addProduct(data){ // se conexao der certo
@@ -25,9 +24,10 @@ function addProduct(data){ // se conexao der certo
         <img id="image" src="${APIResponse[i].image}" alt="item from supplier">
                     <h4 class="name-product">${APIResponse[i].name}</h4>
                     <p class="description-product">${APIResponse[i].description}</p>
-                    <p class="value-product">De: ${APIResponse[i].oldPrice}</p>
-                    <p class="Value-descont">Por: ${APIResponse[i].price}</p>
-                    <p class="value-product-part">ou 2x de ${(APIResponse[i].price)/2}</p>
+                    <p class="value-product">De: R$${APIResponse[i].oldPrice}</p>
+                    <p class="Value-descont">Por: R$${APIResponse[i].price}</p>
+                    <p class="value-product-part">ou 2x de R$${Math.round((APIResponse[i].price)/2)}</p>
+                    <br>
                     <button class="buy-product">Comprar</button>
         </div>`
     }
