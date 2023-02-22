@@ -52,7 +52,6 @@ let formulario_2 = document.querySelector('#news-subscribe')
 formulario_1.onsubmit = function(evento){
     evento.preventDefault()// cancela comportamento padrao
 
-    testes = ``;
 
     let inputName = document.forms['subscribe']['nome'] // seleciona o campo
     let inputMail = document.forms['subscribe']['email']
@@ -70,7 +69,7 @@ formulario_1.onsubmit = function(evento){
         let span = inputName.nextSibling.nextSibling // pesquisa span
         span.innerText = '' // apaga texto no span
         span.classList.remove('span-add-form-error') // remove classe do span
-        return
+        inputName.style.border = '2px solid green';
     }
 
     //EMAIL
@@ -84,7 +83,7 @@ formulario_1.onsubmit = function(evento){
         let span = inputMail.nextSibling.nextSibling
         span.innerText = ''
         span.classList.remove('span-add-form-error')
-        return
+        inputMail.style.border = '2px solid green';
     }
 
     //CPF
@@ -98,11 +97,13 @@ formulario_1.onsubmit = function(evento){
         let span = inputDoc.nextSibling.nextSibling
         span.innerText = ''
         span.classList.remove('span-add-form-error')
+        inputDoc.style.border = '2px solid green';
         return
     }
 
 
 }
+
 
 
 formulario_2.onsubmit = function(evento){
@@ -115,17 +116,15 @@ formulario_2.onsubmit = function(evento){
         inputName2.classList.remove('name-friend')
         inputName2.classList.add('inputError2')
     }else {
-        inputName2.classList.remove('inputError2')
-        inputName2.classList.add('name-friend')
-        return
+        inputName2.style.border = '2px solid green';
     }
 
     if(!inputMail2.value){
         inputMail2.classList.remove('email-share')
         inputMail2.classList.add('inputError2')
+        console.log('tatata3')
     }else {
-        inputMail2.classList.remove('inputError2')
-        inputMail2.classList.add('email-share')
+        inputMail2.style.border = '2px solid green';
         return
     }
 

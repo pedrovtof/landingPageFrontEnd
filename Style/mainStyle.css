@@ -198,15 +198,17 @@ body main .container-product .products-list .product-item {
   text-indent: 2%;
 }
 body main .container-product .products-list .product-item #image {
-  margin-top: 2%;
+  margin-top: 20%;
   display: block;
+  border: 1.4px solid var(--collorMain);
+  padding: 4% 16%;
 }
 body main .container-product .products-list .product-item .name-product {
-  margin: var(--productSize);
+  margin: 4% 0%;
   color: var(--collorMain);
 }
 body main .container-product .products-list .product-item .description-product {
-  margin: var(--productSize);
+  margin: 4% 0%;
   color: var(--collorMain);
 }
 body main .container-product .products-list .product-item .value-product {
@@ -220,13 +222,13 @@ body main .container-product .products-list .product-item .Value-descont {
   font-size: 1.2em;
 }
 body main .container-product .products-list .product-item .value-product-part {
-  margin: var(--productSize);
+  margin: 0% 0% 1% 0%;
   color: var(--collorMain);
 }
 body main .container-product .products-list .product-item .buy-product {
-  margin: var(--productSize);
+  margin: 0% 0% 5% 0%;
   color: var(--collorMain);
-  width: 80%;
+  width: 90%;
   border: 1px solid var(--collorMain);
   padding: 2.5%;
   border-radius: 5px;

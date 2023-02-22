@@ -241,17 +241,19 @@ body{
                 text-indent: 2%;
 
                 #image{
-                    margin-top: 2%;
+                    margin-top: 20%;
                     display: block;
+                    border: 1.4px solid var(--collorMain);
+                    padding: 4% 16%;
                 }
 
                 .name-product{
-                    margin: var(--productSize);
+                    margin:  4% 0%;
                     color: var(--collorMain);
                 }
 
                 .description-product{
-                    margin: var(--productSize);
+                    margin:  4% 0%;
                     color: var(--collorMain);
                 }
 
@@ -261,21 +263,21 @@ body{
                 }
 
                 .Value-descont{
-                    margin: var(--productSize);
+                    margin:  var(--productSize);
                     color: var(--collorMain);
                     font-weight: bold;
                     font-size: 1.2em;
                 }
 
                 .value-product-part{
-                    margin: var(--productSize);
+                    margin:  0% 0% 1% 0%;
                     color: var(--collorMain);
                 }
 
                 .buy-product{
-                    margin: var(--productSize);
+                    margin: 0% 0% 5% 0%;
                     color: var(--collorMain);
-                    width: 80%;
+                    width: 90%;
                     border: 1px solid var(--collorMain);
                     padding: 2.5%;
                     border-radius: 5px;
