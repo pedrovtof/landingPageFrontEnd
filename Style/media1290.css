@@ -61,9 +61,10 @@
     box-sizing: border-box;
     border: 1px 1px 1px var(--collorMain);
     background: var(--collorHeadMain);
-    width: 150px;
+    width: 20%;
     height: 40px;
     border-radius: 5px;
+    font-size: 2em;
   }
   body main {
     margin: 5% 10%;
@@ -83,13 +84,13 @@
   }
   body main .container-subscribe .subscribe-fist-section h3 {
     margin-bottom: 2%;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 5%;
     display: block;
     font-style: none;
   }
   body main .container-subscribe .subscribe-fist-section p {
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
   body main .container-subscribe .subscribe-second-section {
     text-align: left;
@@ -111,6 +112,7 @@
   body main .container-subscribe .subscribe-second-section form .subscribe-form li label {
     display: block;
     margin-bottom: -2%;
+    font-size: 1.5em;
   }
   body main .container-subscribe .subscribe-second-section form .subscribe-form li .label-checkbox {
     display: inline-flex;
