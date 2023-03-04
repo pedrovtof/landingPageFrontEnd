@@ -1,0 +1,331 @@
+@media screen and (min-width: 671px) and (max-width: 1289px) {
+  body {
+    display: flexbox;
+  }
+  body header {
+    margin: 0px auto;
+  }
+  body header .skwed {
+    width: 100%;
+    height: 30vh;
+    transform: skew(0deg, 4deg);
+    background-color: var(--collorMain);
+    margin-bottom: 2%;
+    margin-top: -4%;
+  }
+  body header .container-intro-site {
+    background-color: var(--collorMain);
+    border: 1px solid var(--collorMain);
+    opacity: 1;
+    border-radius: 0px 0px 0px 0px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0%;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  body header .container-intro-site .intro-site-title-level-3 {
+    margin-top: 5%;
+    font-size: 1.2em;
+    color: var(--collorHeadMain);
+  }
+  body header .container-intro-site .intro-site-title-level-1 {
+    margin-top: 1%;
+    font-size: 2.5em;
+    color: var(--collorHeadMain);
+  }
+  body header .container-intro-site .info-under-intro-title-level-1 {
+    display: block;
+    margin-top: 2%;
+    color: var(--collorHeadMain);
+  }
+  body header .container-intro-site .nav-intro-site {
+    margin-top: 4%;
+    margin-bottom: 0%;
+    color: var(--collorHeadMain);
+  }
+  body header .container-intro-site .intro-site-options {
+    margin-top: 4%;
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  body header .container-intro-site .intro-site-options li {
+    z-index: 1;
+    position: relative;
+    display: block;
+    color: var(--collorMain);
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px 1px 1px var(--collorMain);
+    background: var(--collorHeadMain);
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  body main {
+    margin: 5% 10%;
+  }
+  body main .container-subscribe {
+    display: flex;
+    justify-content: space-between;
+  }
+  body main .container-subscribe .subscribe-fist-section {
+    text-align: left;
+    margin-right: 2%;
+    width: 50%;
+    height: 35%;
+    display: block;
+    margin-bottom: 5%;
+    color: var(--collorMain);
+  }
+  body main .container-subscribe .subscribe-fist-section h3 {
+    margin-bottom: 2%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    display: block;
+    font-style: none;
+  }
+  body main .container-subscribe .subscribe-fist-section p {
+    font-size: 1.1em;
+  }
+  body main .container-subscribe .subscribe-second-section {
+    text-align: left;
+    margin-left: 1%;
+    width: 45%;
+    height: 35%;
+    display: block;
+    margin-bottom: 5%;
+  }
+  body main .container-subscribe .subscribe-second-section form {
+    color: var(--collorMain);
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form {
+    list-style: none;
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li {
+    margin-bottom: 4%;
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li label {
+    display: block;
+    margin-bottom: -2%;
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li .label-checkbox {
+    display: inline-flex;
+    margin-right: 5%;
+    font-size: 17px;
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li .subscribe-form-input {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 1.3%;
+    border-radius: 5px;
+    border: 1.3px solid var(--collorMain);
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li .subscribe-form-checkbox {
+    width: 3%;
+    padding: 1.5%;
+    border-radius: 100%;
+    border: 0.1px solid var(--collorMain);
+    height: 12px;
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li .subscribe-form-button {
+    width: 95%;
+    border: 1.3px solid var(--collorMain);
+    padding: 3%;
+    border-radius: 5px;
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li .inputError {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 1.3%;
+    border-radius: 5px;
+    border: 1.3px solid red;
+  }
+  body main .container-subscribe .subscribe-second-section form .subscribe-form li .span-add-form-error {
+    display: block;
+    position: relative;
+    border: 1px solid red;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    width: -moz-max-content;
+    width: max-content;
+    left: 25%;
+  }
+  body main .container-product .container-product-introduction {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  body main .container-product .container-product-introduction .container-product-introduction-line-1 {
+    box-sizing: border-box;
+    content: "";
+    border: 0.2px solid var(--collorMain);
+    width: 30vw;
+    height: 1px;
+  }
+  body main .container-product .container-product-introduction .container-product-introduction-text {
+    text-align: center;
+    position: relative;
+    color: var(--collorMain);
+    bottom: 12px;
+    margin: 0% 0.1% 1% 0.1%;
+  }
+  body main .container-product .container-product-introduction .container-product-introduction-line-2 {
+    box-sizing: border-box;
+    content: "";
+    border: 0.2px solid var(--collorMain);
+    width: 30vw;
+    height: 1px;
+  }
+  body main .container-product .products-list {
+    flex-direction: row;
+    margin: 3% 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .container-product .products-list .product-item {
+    width: 25%;
+    text-align: left;
+    text-indent: 2%;
+  }
+  body main .container-product .products-list .product-item #image {
+    margin-top: 20%;
+    display: block;
+    border: 1.4px solid var(--collorMain);
+    padding: 4% 16%;
+  }
+  body main .container-product .products-list .product-item .name-product {
+    margin: 4% 0%;
+    color: var(--collorMain);
+  }
+  body main .container-product .products-list .product-item .description-product {
+    margin: 4% 0%;
+    color: var(--collorMain);
+  }
+  body main .container-product .products-list .product-item .value-product {
+    margin: var(--productSize);
+    color: var(--collorMain);
+  }
+  body main .container-product .products-list .product-item .Value-descont {
+    margin: var(--productSize);
+    color: var(--collorMain);
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  body main .container-product .products-list .product-item .value-product-part {
+    margin: 0% 0% 1% 0%;
+    color: var(--collorMain);
+  }
+  body main .container-product .products-list .product-item .buy-product {
+    margin: 0% 0% 5% 0%;
+    color: var(--collorMain);
+    width: 90%;
+    border: 1px solid var(--collorMain);
+    padding: 2.5%;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-bottom: 3%;
+    display: block;
+    margin-left: -2%;
+  }
+  body main .container-product .more-product {
+    text-align: center;
+    align-content: center;
+    margin: 6% 40% 10% 27%;
+    border-radius: 5px;
+    color: var(--collorMain);
+    border: 1px solid var(--collorMain);
+    padding: 1%;
+    width: 40%;
+  }
+  body main .container-news-share .container-news-intro {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  body main .container-news-share .container-news-intro .container-news-intro-1 {
+    box-sizing: border-box;
+    content: "";
+    border: 0.2px solid var(--collorMain);
+    width: 28vw;
+    height: 1px;
+  }
+  body main .container-news-share .container-news-intro h2 {
+    text-align: center;
+    position: relative;
+    color: var(--collorMain);
+    bottom: 12px;
+    margin: 0% 0.1% 1% 0.1%;
+  }
+  body main .container-news-share .container-news-intro .container-news-intro-2 {
+    box-sizing: border-box;
+    content: "";
+    border: 0.2px solid var(--collorMain);
+    width: 30vw;
+    height: 1px;
+  }
+  body main .container-news-share p {
+    text-align: center;
+    color: var(--collorMain);
+    display: block;
+    margin-bottom: 2%;
+    font-size: 1.2em;
+  }
+  body main .container-news-share .news-form-share #news-subscribe .news-form-share-list {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 3vw 6vw;
+    width: -webkit-fill-available;
+  }
+  body main .container-news-share .news-form-share #news-subscribe .news-form-share-list li label {
+    color: var(--collorMain);
+    margin-bottom: 1%;
+  }
+  body main .container-news-share .news-form-share #news-subscribe .news-form-share-list li input {
+    margin: 3% 0%;
+    display: block;
+    border: 1px solid var(--collorMain);
+    width: 29vw;
+    padding: 2%;
+    border-radius: 5px;
+  }
+  body main .container-news-share .news-form-share #news-subscribe .news-form-button {
+    text-align: center;
+    margin: 0% 30%;
+    padding: 1vw 11vw;
+    background-color: white;
+    border: 1px solid var(--collorMain);
+    font-size: 1em;
+    border-radius: 4px;
+    color: var(--collorMain);
+  }
+  body .skwed-footer {
+    width: 107%;
+    height: 29vh;
+    transform: skew(0, 176deg);
+    background-color: var(--collorMain);
+    margin-bottom: -9%;
+    margin-top: 10%;
+    position: relative;
+    left: -7%;
+    top: 11px;
+  }
+  body footer {
+    margin-top: 6%;
+    padding: 0% 6% 3% 6%;
+    text-align: center;
+    background-color: var(--collorMain);
+  }
+  body footer .container-footer-end-page {
+    color: var(--collorHeadMain);
+    margin-bottom: 3%;
+    position: relative;
+    z-index: 1;
+  }
+}/*# sourceMappingURL=media671_1289.css.map */
